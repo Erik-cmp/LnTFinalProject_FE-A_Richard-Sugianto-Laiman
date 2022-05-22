@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuddingFest</title>
+    <link rel="shortcut icon" href="title.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Raleway:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <img src="./Logo.png" alt="">
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="home">
+                    Home
+                </a>
+                <a href="event.html" class="events">
+                    Events
+                </a>    
+                <a href="contact.html" class="contact">
+                    Contact Us
+                </a>
+                <a href="reg.html" class="reg">
+                    Register
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-2">
+        <p class="menu bars"><i class="fas fa-bars"></i></p>
+    </div>
+
+    <div id="mobile__menu" class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="index.html" >Home</a>
+            <a href="event.html" >Events</a>
+            <a href="contact.html" >Contact Us</a>
+            <a href="reg.html" style="color: #ffa900; font-weight: 700;">Register</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="mobile.js"></script>
+
+    <section>
+        <div class="upper-container">
+            <h1><span>| </span>Choose your ticket</h1>
+            <div class="plan-container">
+                <div class="cards">
+                    <div class="content">
+                        <div class="visible">
+                            <h3>Pudding<span>FEST</span><sub>NET</sub></h3>
+                            <p>FREE</p>
+                        </div>
+                        <ul class="drop">
+                            <li>
+                                Access to all product <span>exhibitions</span> via video conference.
+                            </li>
+                        </ul>
+                        <div class="toggle">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards2">
+                    <div class="content">
+                        <div class="visible">
+                            <h3>Pudding<span>FEST</span><sub>NET+</sub></h3>
+                            <p>IDR 300.000</p>
+                        </div>
+                        <ul class="drop">
+                            <li>
+                                Access to all product <span>exhibitions</span> and <span>summits</span> via video conference.
+                            </li>
+                        </ul>
+                        <div class="toggle2">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards3">
+                    <div class="content">
+                        <div class="visible">
+                            <h3>Pudding<span>FEST</span></h3>
+                            <p>IDR 850.000</p>
+                        </div>
+                        <ul class="drop">
+                            <li>
+                                Access to all product <span>exhibitions</span> and <span>summits.</span>
+                            </li>
+                            <li>
+                                Get exclusive <span>PuddingFest</span> merchandise.
+                            </li>
+                            <li>
+                                Includes lunch and snacks.
+                            </li>
+                        </ul>
+                        <div class="toggle3">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards4">
+                    <div class="content">
+                        <div class="visible">
+                            <h3>Pudding<span>FEST</span><sub>PLUS</sub></h3>
+                            <p>IDR 1.200.000</p>
+                        </div>
+                        <ul class="drop">
+                            <li>
+                                Access to all product <span>exhibitions, summits</span> and <span>tech trials.</span>
+                            </li>
+                            <li>
+                                Get exclusive premium <span>PuddingFest</span> merchandise.
+                            </li>
+                            <li>
+                                Includes lunch and snacks.
+                            </li>
+                        </ul>
+                        <div class="toggle4">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="register-container">
+            <div class="register-left">
+                <h1><span>| </span>Register</h1>
+                <form id="reg-form">
+                    <input type="text" name="name" autocomplete="off" placeholder="Name" id="name">
+                    <label for="name" class="label"></label>
+                    <input type="email" name="email" autocomplete="off" placeholder="Email" id="email">
+                    <label for="email" class="label"></label>
+                    <input type="text" name="phone" autocomplete="off" placeholder="Phone Number" id="phone">
+                    <label for="email" class="label"></label>
+                    <select name="event" id="event">
+                        <option value="" disabled selected>Ticket type</option>
+                        <option value="1">PuddingFest(NET)</option>
+                        <option value="2">PuddingFest(NET+)</option>
+                        <option value="3">PuddingFest</option>
+                        <option value="4">PuddingFest(PLUS)</option>
+                    </select>
+                    <input id="submit-btn" type="submit" value="Submit"/>
+                </form>
+            </div>
+            <div class="img-right">
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="footer-c">
+            <div class="upper-footer">
+                <div class="section-1">
+                    <img src="./Logo.png" alt="">
+                    <p>PuddingFest is an event held by PT Musang and thus, everything associated with it is a property of PT Musang Technologies Tbk</p>
+                </div>
+                <div class="section-2">
+                    <h2>PT Musang</h2>
+                    <h3>Home</h3>
+                    <h3>About Us</h3>
+                    <h3>Careers</h3>
+                    <h3>Products</h3>
+                    <h3>Services</h3>
+                    <h3>Blogs</h3>
+                </div>
+                <div class="section-3">
+                    <h2>LEGAL</h2>
+                    <h3>Terms of use</h3>
+                    <h3>Terms of service</h3>
+                    <h3>Privacy Policy</h3>
+                    <h3>Cookie Policy</h3>
+                </div>
+                <div class="section-4">
+                    <h2>Notify Me</h2>
+                    <p>We will remind you one week prior to the start of the event.</p>
+                    <div class="newsletter-c">
+                        <div class="newsletter-l">
+                            <form action="">
+                                <label for="email"></label>
+                                <input style="width: 18vw; background-color:#252525; text-decoration: none; border-width:0px; border:none; outline:none; color: #ffffff;" type="text" id="email" name="email" placeholder="Enter your email">
+                            </form>
+                        </div>
+                        <div class="newsletter-r">
+                            <a href="" style="font-weight: bold;">Submit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="lower-footer">
+                <div class="f-left">
+                    <a href="">Policy & Terms</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="f-mid">
+                    <h3>Copyright 2022 All rights reserved.</h3>
+                </div>
+                <div class="f-right">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-footer">
+        <h3>Copyright 2022 All rights reserved.</h3>
+        <div class="footer-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelector(".cards");
+        const cardtoggle = document.querySelector(".toggle");
+        cardtoggle.onclick = function(){
+            cards.classList.toggle("active");
+        };
+
+        const cards2 = document.querySelector(".cards2");
+        const cardtoggle2 = document.querySelector(".toggle2");
+        cardtoggle2.onclick = function(){
+            cards2.classList.toggle("active");
+        };
+
+        const cards3 = document.querySelector(".cards3");
+        const cardtoggle3 = document.querySelector(".toggle3");
+        cardtoggle3.onclick = function(){
+            cards3.classList.toggle("active");
+        };
+
+        const cards4 = document.querySelector(".cards4");
+        const cardtoggle4 = document.querySelector(".toggle4");
+        cardtoggle4.onclick = function(){
+            cards4.classList.toggle("active");
+        };
+    </script>
+    <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.nav-container .nav-right .home{
+    font-weight: bold;
+    color: #ffa900;
+}
+
+.nav-container .nav-right .home:after{
+    width: 100%;
+}

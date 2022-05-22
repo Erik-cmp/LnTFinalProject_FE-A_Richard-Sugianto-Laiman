@@ -1,0 +1,8 @@
+.nav-container .nav-right .reg{
+    font-weight: bold;
+    color: #ffa900;
+}
+
+.nav-container .nav-right .reg:after{
+    width: 100%;
+}

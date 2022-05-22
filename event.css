@@ -1,0 +1,8 @@
+.nav-container .nav-right .events{
+    font-weight: bold;
+    color: #ffa900;
+}
+
+.nav-container .nav-right .events:after{
+    width: 100%;
+}

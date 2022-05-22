@@ -1,0 +1,8 @@
+.nav-container .nav-right .contact{
+    font-weight: bold;
+    color: #ffa900;
+}
+
+.nav-container .nav-right .contact:after{
+    width: 100%;
+}
